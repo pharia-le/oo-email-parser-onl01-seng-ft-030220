@@ -14,11 +14,11 @@ class EmailAddressParser
     @email_addresses = email_addresses
     
     if email_addresses.include?(", ")
-      parse(email_addresses)
+      parse
     end
   end
   
-  def parse(email_addresses)
+  def parse
     email_addresses = email_addresses.split(", ")
   end
   
