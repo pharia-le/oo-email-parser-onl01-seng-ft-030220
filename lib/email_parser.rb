@@ -11,7 +11,7 @@ class EmailAddressParser
   
   def initialize(data)
     if data.include?(", ")
-      parse_from_csv(data)
+      parse(data)
     end
   end
   
