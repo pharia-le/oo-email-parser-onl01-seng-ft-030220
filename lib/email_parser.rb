@@ -15,14 +15,8 @@ class EmailAddressParser
     end
   end
   
-  def parse
-  
-  end
-  
-  
-  def parse_from_csv(data)
+  def parse(data)
     addresses = data.split(", ")
-    addresses
   end
   
 end
