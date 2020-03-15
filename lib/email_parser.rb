@@ -7,14 +7,19 @@ class EmailAddressParser
   
   attr_accessor
   
+  def initialize(data)
+    if data.include?(", ")
+      parse_from_csv(data)
+    end
+  end
+  
   def parse
-    
+  
   end
   
   
   def parse_from_csv(data)
     addresses = data.split(", ")
-    emaddressesails
   end
   
 end
