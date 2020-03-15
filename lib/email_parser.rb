@@ -7,16 +7,19 @@ require 'pry'
 
 class EmailAddressParser 
   
-  attr_accessor :addresses
+  attr_accessor :email_addresses
   
-  def initialize(data)
-    if data.include?(", ")
-      parse(data)
+  def initialize(email_addresses)
+    
+    @email_addresses = email_addresses
+    
+    if email_addresses.include?(", ")
+      parse(email_addresses)
     end
   end
   
-  def parse(data)
-    addresses = data.split(", ")
+  def parse(email_addresses)
+    email_addresses = email_addresses.split(", ")
   end
   
 end
