@@ -22,7 +22,7 @@ class EmailAddressParser
   
   def parse_from_csv(data)
     addresses = data.split(", ")
-    binding.pry
+    addresses
   end
   
 end
