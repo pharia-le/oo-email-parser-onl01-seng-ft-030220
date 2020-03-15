@@ -10,12 +10,8 @@ class EmailAddressParser
   attr_accessor :email_addresses
   
   def initialize(email_addresses)
-    
     @email_addresses = email_addresses
-    
-    if email_addresses.include?(", ")
-      parse
-    end
+    parse
   end
   
   def parse
