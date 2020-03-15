@@ -7,7 +7,7 @@ require 'pry'
 
 class EmailAddressParser 
   
-  attr_accessor
+  attr_accessor :addresses
   
   def initialize(data)
     if data.include?(", ")
